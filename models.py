@@ -6,7 +6,7 @@ import os
 
 class Resnet50:
     def __init__(self) -> None:
-        # 从pytorch中获取预训练模型，进行推理
+        # 从pytorch中获取预训练模型，进行推理hh
         self.model = models.resnet50(pretrained=True)
         self.model.eval()
         for param in self.model.parameters():
